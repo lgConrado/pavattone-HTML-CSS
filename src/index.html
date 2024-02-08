@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
-    <title>Pavattone</title>
-  </head>
-  <body>
-    <h1 class="modal__titulo">Login</h1>
-    <h2 class="modal__subtitulo">Entre com suas credenciais.</h2>
-    <input type="text" class="formulario__input" placeholder="Usuário"/>
-    <input type="password" class="formulario__input" placeholder="Senha"/>
-    <input type="checkbox" />
-    <button class="modal__botao">Entrar</button>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Pavattone</title>
+</head>
+
+<body>
+
+  <div class="modal">
+    <div class="modal__container">
+      <div class="modal__header">
+        <h1 class="modal__titulo">Login</h1>
+        <h2 class="modal__subtitulo">Entre com suas credenciais.</h2>
+      </div>
+
+      <div class="modal__camposformulario">
+        <input type="text" class="formulario__input" placeholder="Usuário" />
+        <input type="password" class="formulario__input" placeholder="Senha" />
+        <div class="mostrar__senha">
+          <input type="checkbox" id="mostrarSenha" class="checkbox" />
+          <label for="mostrarSenha">Mostrar senha</label>
+        </div>
+      </div>
+      <div class="modal__botao">
+        <button class="botao">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>

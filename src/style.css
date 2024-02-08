@@ -1,14 +1,38 @@
 body {
-  background-color: #494949;
+  background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: #494949;
+  align-items: center;
+  height: 600px;
+  width: 500px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.modal__container {
+  padding: 50px;
 }
 
 h1 {
   font-size: 40px;
 }
 
+.modal__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
 .modal__titulo {
   color: #FFFFFF;
+  justify-content: center;
 }
 
 h2 {
@@ -19,7 +43,37 @@ h2 {
   color: #FFFFFF;
 }
 
+.modal__camposformulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.mostrar__senha {
+  display: flex;
+  color: #FFFFFF;
+  font-weight: 500;
+  align-items: center;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.checkbox {
+  appearance: none;
+  background-color: #FFFFFF;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #9E9E9E;
+  border-radius: 6px;
+}
+
 .modal__botao {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.botao {
   appearance: none;
   background-color: #009246;
   border: 1px solid transparent;
@@ -29,6 +83,7 @@ h2 {
   font-weight: 700;
   height: 60px;
   width: 180px;
+  justify-content: center;
 }
 
 .formulario__input{
@@ -40,5 +95,7 @@ h2 {
     font-weight: 600;
     height: 45px;
     padding-left: 25px;
-    width: 400px;
+    width: 350px;
+    margin-top: 15px;
 }
+
